@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f8f00c;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heading{
+    position: absolute;
+    top: 20%;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.container .input{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 500px;
+    background: #000;
+    border-radius: 6px;
+    box-shadow: 2px 14px 20px rgba(0, 0, 0, 0.3);
+}
+.container .input #input_date{
+    height: 50px;
+    border-radius: 6px;
+    width: 60%;
+    padding: 0 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.container .input .submit{
+    height: 50px;
+    border-radius: 6px;
+    width: 30%;
+   background-color: rgb(10, 212, 10);
+   color: #000;
+    font-size: 20px;
+    border:none;
+    outline: none;
+}
+.container .input .submit:hover{
+    background-color: rgb(5, 172, 5);
+}
+.container .result{
+    display: flex;
+    width: 500px;
+    padding: 0 2px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.container .result .box{
+    color: #fff;
+    background-color: #000;
+    padding: 25px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 2px 14px 20px rgba(0, 0, 0, 0.3);
+}
+.container .result .box span{
+    font-size: 28px;
+    font-weight: 500;
+}
+.container .result .box p{
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+@media (max-width:420px) {
+    
+    .container .input{
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        width: 300px; 
+    }
+    .container .input #input_date{
+        margin-left: 0px;
+        height: 40px;
+        width: 60%;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .container .input .submit{
+        height: 40px; 
+        width: 30%;
+        font-size: 15px;  
+    }
+    .container .result{
+        display: flex;
+        width: 300px;
+        padding: 0 2px;
+    }
+    .container .result .box{
+      
+        padding: 10px;
+        text-align: center;
+        border-radius: 6px; 
+    }
+    .container .result .box span{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .heading{
+        position: absolute;
+        top: 25%;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0px;
+    }
+}
